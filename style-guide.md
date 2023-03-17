@@ -25,6 +25,11 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 ### Body Copy
 
 - Font size: 15px
+- Title size 34px
+
+### **mobile**
+
+- title 22px
 
 ### Font
 
@@ -33,3 +38,40 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
 - Weights: 700
+
+### **Desktop size**
+
+## Iconos
+
+- width 70px
+- height 40px
+
+### Section
+
+- width: 920px
+- height: 500px
+
+### Cards
+
+- width: 304px
+- gap: 40px
+- **footer** 40px bottom
+- padding left 46px
+- padding right 50px
+- padding top 46px
+
+### **Mobile size**
+
+## Iconos
+
+- width 46px
+- height 27px
+
+### Cards
+
+- width: 206px
+- height: 280px
+- - **footer** 30px bottom
+- padding left 30px
+- padding right 35px
+- padding top 30px
