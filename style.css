@@ -27,13 +27,13 @@ html {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--Very-light-gray);
   color: var(--Very-light-gray);
 }
-.section-name,
-.page-name {
+.section-name {
   display: none;
 }
 .car-cards {
