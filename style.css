@@ -34,7 +34,7 @@ html {
 }
 .section-name,
 .page-name {
-  display: none;
+  display: hidden;
 }
 .car-cards {
   display: flex;
