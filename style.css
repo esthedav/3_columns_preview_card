@@ -11,8 +11,7 @@
   /* Fonts */
   --Title-font: 'Big Shoulders Display', cursive;
   --Paragraph-font: 'Lexend Deca', sans-serif;
-  --Title-size-desktop: 3.4rem;
-  --Title-size-mobile: 2.2rem;
+  --Title-size: 3.4rem;
   --Paragraph-size: 1.5rem;
 }
 * {
@@ -51,7 +50,7 @@ html {
 }
 .header-card__title {
   margin-top: 4rem;
-  font-size: var(--Title-size-desktop);
+  font-size: var(--Title-size);
   font-family: var(--Title-font);
   font-weight: 700;
   text-transform: uppercase;
@@ -66,8 +65,8 @@ html {
   bottom: 6rem;
 }
 .card__footer__button {
-  padding: 1.6rem 2rem;
-  border-radius: 2rem;
+  padding: 1.4rem 3rem;
+  border-radius: 3rem;
   border: 2px solid var(--Very-light-gray);
   background-color: var(--Very-light-gray);
 }
@@ -81,6 +80,7 @@ html {
   color:var(--Very-dark-cyan)
 }
 .card__footer__button:hover {
+  cursor: pointer;
   border: 2px solid var(--Very-light-gray);
   background: transparent;
 }
@@ -92,11 +92,55 @@ html {
   font-family: var(--Paragraph-font);
 }
 .card-sedans {
+  border-top-left-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
   background: var(--Bright-orange);
 }
 .card-suvs {
   background: var(--Dark-cyan);
 }
 .card-luxury {
+  border-top-right-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
   background: var(--Very-dark-cyan);
+}
+@media (max-width:925px) {
+  .main {
+    height: 100%;
+  }
+  .car-cards{
+    width: 300px;
+    height: 100%;
+    margin: 1.8rem;
+    flex-direction: column;
+  }
+  .card {
+    width: 300px;
+    gap: 24px;
+  }
+  .header-car__figure-logo {
+    width: 4.6rem;
+    height: 2.7rem;
+  }
+  .header-card__title {
+    margin-top: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .card__footer {
+    position: static;
+    margin-top: 1.6rem;
+  }
+  .card-sedans {
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    border-bottom-left-radius: 0;  
+    background: var(--Bright-orange);
+  }
+  .card-luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    background: var(--Very-dark-cyan);
+  }
 }
