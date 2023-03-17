@@ -32,7 +32,8 @@ html {
   background: var(--Very-light-gray);
   color: var(--Very-light-gray);
 }
-.section-name {
+.section-name,
+.page-name {
   display: none;
 }
 .car-cards {
