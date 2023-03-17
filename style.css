@@ -1,0 +1,102 @@
+:root {
+  /* Primary colors */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral colors */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs*/
+  --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons*/
+
+  /* Fonts */
+  --Title-font: 'Big Shoulders Display', cursive;
+  --Paragraph-font: 'Lexend Deca', sans-serif;
+  --Title-size-desktop: 3.4rem;
+  --Title-size-mobile: 2.2rem;
+  --Paragraph-size: 1.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Very-light-gray);
+  color: var(--Very-light-gray);
+}
+.car-cards {
+  display: flex;
+  width: 920px;
+  height: 500px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 46px 50px 40px 46px;
+}
+.header-car__figure-logo {
+  width: 7rem;
+  height: 4rem;
+}
+.header-card__title {
+  margin-top: 4rem;
+  font-size: var(--Title-size-desktop);
+  font-family: var(--Title-font);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card__text {
+  font-family: var(--Paragraph-font);
+  font-size: var(--Paragraph-size);
+  font-weight: 400;
+}
+.card__footer {
+  position: absolute;
+  bottom: 6rem;
+}
+.card__footer__button {
+  padding: 1.6rem 2rem;
+  border-radius: 2rem;
+  border: 2px solid var(--Very-light-gray);
+  background-color: var(--Very-light-gray);
+}
+.card__footer__button-text--sedans {
+  color: var(--Bright-orange)
+}
+.card__footer__button-text--suvs {
+  color:var(--Dark-cyan)
+}
+.card__footer__button-text--luxury {
+  color:var(--Very-dark-cyan)
+}
+.card__footer__button:hover {
+  border: 2px solid var(--Very-light-gray);
+  background: transparent;
+}
+.card__footer__button:hover .card__footer__button-text {
+  color: var(--Very-light-gray);
+}
+.card__footer__button-text {
+  font-size: var(--Paragraph-size);
+  font-family: var(--Paragraph-font);
+}
+.card-sedans {
+  background: var(--Bright-orange);
+}
+.card-suvs {
+  background: var(--Dark-cyan);
+}
+.card-luxury {
+  background: var(--Very-dark-cyan);
+}
